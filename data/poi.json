@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "HQ", "Description": "" }, "geometry": { "type": "Point", "coordinates": [ -78.443056260001626, 39.664924422953888, 0.0 ] } }
+]
+}

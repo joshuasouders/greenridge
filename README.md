@@ -1,0 +1,7 @@
+I made this site because the only map that I could find of Greenridge State Park in Maryland was a really bad PDF. With 100+ campsites and a poorly designed PDF, it was almost impossible to find the campsite you were looking for. To generate this data I overlayed the PDF on Google Earth with transparency and I manually put markers in the position of each campsite. Then I exported to KML, which I then fed into QGIS and exported as GeoJSON. Also, I put good tiles on there so that you can actually see what your campsite will look like.
+
+The Javascript basically just takes data/campsites.json, data/group-campsites.json, and data/poi.json (all GeoJSON files) and throws them on the map with different color markers. Also, this site utilizes Leaflet AwesomeMarkers, and I've made some edits to the library so that I can pass in/write good looking text within the markers. The site is set up so that if you change the zoom level and the default lat/lon, then pass in other marker locations in the data files, you can have a map for a completely different park. It works great on mobile.
+
+There's plans to distribute this widely and have a campsite review/rating system, maybe even compile this to native Android/iPhone apps and add offline tiles so that this can be an offline thing, but for now I'm happy to just have a map that doesn't suck. I've also done some work with Google Earth in the browser and it'd be cool to get a 3D view up.
+
+Feel free to fork, this is a repository that was designed to be easy to repurpose.
